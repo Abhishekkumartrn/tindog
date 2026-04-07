@@ -8,84 +8,113 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   
-  <!-- Your existing CSS -->
+  <!-- Your CSS -->
   <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .terms-heading {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .navbar-glass {
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(8px);
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- Header using SAME gradient -->
-  <section class="gradient-background text-white text-center py-5">
+  <!-- 🔝 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">TinDog</a>
+      <div>
+        <a href="index.html" class="btn btn-outline-light btn-sm">Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🎨 Hero Section -->
+  <section class="gradient-background text-white text-center py-5" style="margin-top:60px;">
     <div class="container">
       <h1 class="display-4 fw-bold">Terms & Conditions</h1>
-      <p class="lead">Understand the rules before using TinDog 🐶</p>
+      <p class="lead">Simple rules to keep things fair 🐶</p>
     </div>
   </section>
 
-  <!-- Content -->
+  <!-- 📄 Content -->
   <section class="container py-5">
-    
     <div class="row justify-content-center">
       <div class="col-lg-8">
 
-        <h3 class="mb-3">1. Acceptance of Terms</h3>
-        <p>
-          By accessing TinDog, you agree to be bound by these terms. If you disagree,
-          please discontinue use immediately.
-        </p>
+        <div class="glass-card">
+          <h4 class="terms-heading">1. Acceptance of Terms</h4>
+          <p>By using TinDog, you agree to these terms. If not, please stop using the service.</p>
+        </div>
 
-        <h3 class="mt-4 mb-3">2. Use of Service</h3>
-        <p>
-          TinDog is designed to help dog owners connect. You agree to use the platform responsibly
-          and not misuse the service.
-        </p>
+        <div class="glass-card">
+          <h4 class="terms-heading">2. Use of Service</h4>
+          <p>Use TinDog responsibly and only for lawful purposes. No misuse or abuse allowed.</p>
+        </div>
 
-        <h3 class="mt-4 mb-3">3. User Responsibilities</h3>
-        <p>
-          You are responsible for maintaining account security and ensuring your activity complies
-          with applicable laws.
-        </p>
+        <div class="glass-card">
+          <h4 class="terms-heading">3. User Responsibilities</h4>
+          <p>You are responsible for your account and activity on the platform.</p>
+        </div>
 
-        <h3 class="mt-4 mb-3">4. Content Guidelines</h3>
-        <p>
-          Do not upload harmful, offensive, or misleading content. Violations may result in account suspension.
-        </p>
+        <div class="glass-card">
+          <h4 class="terms-heading">4. Content Guidelines</h4>
+          <p>No harmful or offensive content. Violations may lead to account removal.</p>
+        </div>
 
-        <h3 class="mt-4 mb-3">5. Payments</h3>
-        <p>
-          Paid plans (if any) are billed monthly. No refunds unless explicitly stated.
-        </p>
+        <div class="glass-card">
+          <h4 class="terms-heading">5. Payments</h4>
+          <p>All paid features are billed monthly. No refunds unless specified.</p>
+        </div>
 
-        <h3 class="mt-4 mb-3">6. Limitation of Liability</h3>
-        <p>
-          TinDog is not liable for any damages resulting from interactions between users.
-        </p>
+        <div class="glass-card">
+          <h4 class="terms-heading">6. Liability</h4>
+          <p>We are not responsible for user interactions or damages.</p>
+        </div>
 
-        <h3 class="mt-4 mb-3">7. Termination</h3>
-        <p>
-          We may suspend or terminate accounts that violate these terms.
-        </p>
+        <div class="glass-card">
+          <h4 class="terms-heading">7. Termination</h4>
+          <p>Accounts violating rules may be suspended without notice.</p>
+        </div>
 
-        <h3 class="mt-4 mb-3">8. Updates to Terms</h3>
-        <p>
-          These terms may change at any time. Continued usage implies acceptance of updates.
-        </p>
+        <div class="glass-card">
+          <h4 class="terms-heading">8. Updates</h4>
+          <p>We may update these terms anytime. Continued use = acceptance.</p>
+        </div>
 
-        <h3 class="mt-4 mb-3">9. Contact</h3>
-        <p>
-          Email: <strong>support@tindog.com</strong>
-        </p>
+        <div class="glass-card">
+          <h4 class="terms-heading">9. Contact</h4>
+          <p>Email: <strong>support@tindog.com</strong></p>
+        </div>
 
       </div>
     </div>
-
   </section>
 
-  <!-- Footer (same style reuse) -->
-  <section id="footer" class="gradient-background">
-    <div class="container text-center py-4">
-      <p class="text-white mb-0">© TinDog</p>
-    </div>
+  <!-- Footer -->
+  <section class="gradient-background text-center py-4">
+    <p class="text-white mb-0">© TinDog</p>
   </section>
 
 </body>
