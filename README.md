@@ -1,2 +1,3 @@
 # tindog
-A cool website for Doggies
+A website of Dogs and Lovers
+
